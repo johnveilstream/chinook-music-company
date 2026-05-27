@@ -23,8 +23,6 @@ services:
     env_file: ./.env
     environment:
       DATABASE_URI: postgresql://user:password@database:5432/database
-    volumes:
-      - .proxy-data/:/veilstream/
     ports:
       - "5435:5432"
       - "8683:8683"
